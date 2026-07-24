@@ -35,8 +35,12 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
    * **Decisão Técnica:** Opção por um fluxo linear e direto, sem o encapsulamento em funções adicionais, mantendo o script focado na simplicidade do conceito trabalhado.
 
 2. **[Repetindo Textos ✏️](./2_repetindo_textos.py)**
-   * **Descrição:** Solicita uma string e um número inteiro, retornando o texto repetido a quantidade de vezes informada.
-   * **Conceitos:** Manipulação de strings, conversão de tipos (`int`) e repetição de strings em Python.
+   * **Objetivo:** Receber uma string e um número inteiro, retornando o texto repetido de acordo com o número informado.
+   * **Lógica e Conceitos Aplicados:**
+   * Conversão explícita de tipos com `int()` para tratar a entrada numérica.
+   * Uso do operador de multiplicação (`*`) aplicado a strings para repetição nativa em Python.
+   * Manipulação de espaço e formatação usando `.strip()` para remover o excesso de espaços no final da string final.
+   * **Decisão Técnica:** Implementação de tratamento de exceção (`try/except`) para tratar falhas de conversão de tipos (`ValueError`) e garantir resiliência contra entradas inválidas do usuário.
 
 3. **[Operações Matemáticas Simples 📐](./3_operacoes_matematicas.py)**
    * **Descrição:** Solicita dois números e realiza uma operação matemática básica entre eles.
