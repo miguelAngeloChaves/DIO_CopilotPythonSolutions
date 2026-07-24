@@ -25,12 +25,31 @@ Este repositório reúne resoluções de desafios de código e algoritmos em Pyt
 
 ## 🎯 Desafios Resolvidos
 
-Abaixo estão os principais algoritmos desenvolvidos com o auxílio da ferramenta:
+Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositório com o auxílio da **Gemini IA**:
 
-1. **[Nome do Algoritmo 1](./src/algoritmo1.py)** — Breve descrição do problema (ex: *Concatenação de dados ou cálculos simples*).
-2. **[Nome do Algoritmo 2](./src/algoritmo2.py)** — Breve descrição do problema (ex: *Verificação de palíndromos ou manipulação de strings*).
-3. **[Nome do Algoritmo 3](./src/algoritmo3.py)** — Breve descrição do problema (ex: *Operações matemáticas básicas*).
+1. **[Concatenando Dados 🐾](./1_concatenando_dados.py)**
+   * **Descrição:** Recebe dois dados diferentes do usuário e os combina em uma única string.
+   * **Conceitos:** Manipulação de strings, entrada de dados (`input`) e concatenação.
 
+2. **[Repetindo Textos ✏️](./2_repetindo_textos.py)**
+   * **Descrição:** Solicita uma string e um número inteiro, retornando o texto repetido a quantidade de vezes informada.
+   * **Conceitos:** Manipulação de strings, conversão de tipos (`int`) e repetição de strings em Python.
+
+3. **[Operações Matemáticas Simples 📐](./3_operacoes_matematicas.py)**
+   * **Descrição:** Solicita dois números e realiza uma operação matemática básica entre eles.
+   * **Conceitos:** Operadores aritméticos (`+`, `-`, `*`, `/`), conversão para número e tratamento de entradas.
+
+4. **[Verificando Números Pares e Ímpares 🧮](./4_par_ou_impar.py)**
+   * **Descrição:** Recebe um número inteiro e identifica se ele é par ou ímpar utilizando estruturas condicionais.
+   * **Conceitos:** Estruturas de controle (`if/else`), operador de módulo (`%`) e otimização de código com IA.
+
+5. **[Calculando Média de Notas 📚](./5_calculando_media.py)**
+   * **Descrição:** Recebe três notas do usuário e calcula a média aritmética simples.
+   * **Conceitos:** Operadores aritméticos, precedência de operadores e manipulação de variáveis do tipo `float`.
+
+6. **[Verificando Palíndromos 🔄](./6_verificando_palindromos.py)**
+   * **Descrição:** Testa se uma palavra ou frase é um palíndromo (se lida da mesma forma de trás para frente).
+   * **Conceitos:** Fatiamento de strings em Python (`[::-1]`), remoção de espaços/caracteres e comparação condicional.
 ---
 
 ## 🚀 Como Executar o Projeto
@@ -42,5 +61,4 @@ Abaixo estão os principais algoritmos desenvolvidos com o auxílio da ferrament
 ### Passo a Passo
 
 1. **Clone este repositório:**
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+   ```bash git clone https://github.com/miguelAngeloChaves/DIO_CopilotPythonSolutions.git
