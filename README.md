@@ -30,17 +30,24 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
 1. **[Concatenando Dados 🐾](./1_concatenando_dados.py)**
    * **Objetivo:** Receber duas entradas do usuário e exibi-las juntas em uma única string.
    * **Lógica e Conceitos Aplicados:**
-   * Uso da função nativa `input()` para captura de dados (que no Python sempre chegam como o tipo `string`).
-   * Utilização de **f-strings** (`f"{var1} {var2}"`) para fazer a interpolação de variáveis de forma mais legível e performática em comparação à concatenação com o operador `+`.
+     * Uso da função nativa `input()` para captura de dados (que no Python sempre chegam como o tipo `string`).
+     * Utilização de **f-strings** (`f"{var1} {var2}"`) para fazer a interpolação de variáveis de forma mais legível e performática em comparação à concatenação com o operador `+`.
    * **Decisão Técnica:** Opção por um fluxo linear e direto, sem o encapsulamento em funções adicionais, mantendo o script focado na simplicidade do conceito trabalhado.
 
 2. **[Repetindo Textos ✏️](./2_repetindo_textos.py)**
-   * **Objetivo:** Receber uma string e um número inteiro, retornando o texto repetido de acordo com o número informado.
+   * **Objetivo:** Receber uma string e um número inteiro, retornando o texto repetido a quantidade de vezes informada.
    * **Lógica e Conceitos Aplicados:**
-   * Conversão explícita de tipos com `int()` para tratar a entrada numérica.
-   * Uso do operador de multiplicação (`*`) aplicado a strings para repetição nativa em Python.
-   * Manipulação de espaço e formatação usando `.strip()` para remover o excesso de espaços no final da string final.
-   * **Decisão Técnica:** Implementação de tratamento de exceção (`try/except`) para tratar falhas de conversão de tipos (`ValueError`) e garantir resiliência contra entradas inválidas do usuário.
+     * Uso do operador de multiplicação (`*`) em strings para repetição nativa.
+     * Formatação e remoção de espaços sobressalentes nas extremidades com `.strip()`.
+     * Conversão explícita de tipos com `int()` e tratamento de erros com `try/except` para capturar falhas de conversão (`ValueError`).
+     * Controle de fluxo com laço `while True` para validação contínua de entradas.
+
+   * **Decisões de Arquitetura e Resiliência (Clean Code):**
+     * **Separação de Responsabilidades (SRP):**
+        * `obter_quantidade_valida()`: Cuida exclusivamente do input do usuário e da validação do tipo de dado.
+        * `repetir_texto(texto, vezes)`: Função pura responsável apenas pela regra de negócio (multiplicação da string).
+     * **Tratamento de Estouro de Memória (`MemoryError`):** Durante os testes de estresse, identificou-se que como o tipo `int` em Python possui precisão arbitrária (sem limite máximo fixo de tamanho), o input de números extremamente altos (ex: $500$ bilhões) não causava estouro de inteiro, mas alocava espaço excessivo de RAM ao tentar gerar a string, resultando em `MemoryError`. A execução principal foi envolvida em um bloco `try/except MemoryError` para capturar essa exceção do sistema e solicitar uma nova quantidade sem derrubar a aplicação.
+     * **Remoção do `if __name__`:** Mantido o foco didático e direto para scripts de execução individual.
 
 3. **[Operações Matemáticas Simples 📐](./3_operacoes_matematicas.py)**
    * **Descrição:** Solicita dois números e realiza uma operação matemática básica entre eles.

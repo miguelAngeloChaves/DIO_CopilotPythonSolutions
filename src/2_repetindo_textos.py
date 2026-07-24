@@ -1,22 +1,28 @@
-# Desafio 2: Repetindo Textos ✏️ (Versão Técnica)
+# Desafio 2: Repetindo Textos ✏️
 
-def repetir_texto():
-    texto = input("Digite o texto que deseja repetir: ")
-    
-    # Tratamento para garantir que o usuário digite um número inteiro válido
+def obter_quantidade_valida():
+    while True:
+        try:
+            qtd = int(input("Digite a quantidade de repetições: "))
+            if qtd > 0:
+                return qtd
+            print("⚠️ Digite um número maior que zero.\n")
+        except ValueError:
+            print("❌ Entrada inválida! Digite apenas números inteiros.\n")
+
+def repetir_texto(texto, vezes):
+    return (texto + " ") * vezes
+
+# Execução do fluxo
+texto_usuario = input("Digite o texto que deseja repetir: ")
+
+
+while True:
+    vezes_usuario = obter_quantidade_valida()
     try:
-        numero = int(input("Digite a quantidade de vezes que deseja repetir: "))
-        
-        if numero <= 0:
-            print("Por favor, digite um número inteiro maior que zero.")
-            return
-
-        # Multiplicação da string e remoção do espaço sobressalente no final (.strip)
-        resultado = (texto + " ") * numero
+        resultado = repetir_texto(texto_usuario, vezes_usuario)
         print(f"\nResultado:\n{resultado.strip()}")
-
-    except ValueError:
-        print("Erro: Entrada inválida. Você precisa digitar um número inteiro.")
-
-if __name__ == "__main__":
-    repetir_texto()
+        break  # Sucesso: exibe o resultado e sai do programa
+    except MemoryError:
+        print("💥 Erro de Memória: A quantidade pedida gera um texto grande demais para a RAM do seu computador!")
+        print("Tente novamente com um número menor.\n")
