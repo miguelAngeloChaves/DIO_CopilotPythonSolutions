@@ -28,8 +28,11 @@ Este repositório reúne resoluções de desafios de código e algoritmos em Pyt
 Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositório com o auxílio da **Gemini IA**:
 
 1. **[Concatenando Dados 🐾](./1_concatenando_dados.py)**
-   * **Descrição:** Recebe dois dados diferentes do usuário e os combina em uma única string.
-   * **Conceitos:** Manipulação de strings, entrada de dados (`input`) e concatenação.
+   * **Objetivo:** Receber duas entradas do usuário e exibi-las juntas em uma única string.
+   * **Lógica e Conceitos Aplicados:**
+   * Uso da função nativa `input()` para captura de dados (que no Python sempre chegam como o tipo `string`).
+   * Utilização de **f-strings** (`f"{var1} {var2}"`) para fazer a interpolação de variáveis de forma mais legível e performática em comparação à concatenação com o operador `+`.
+   * **Decisão Técnica:** Opção por um fluxo linear e direto, sem o encapsulamento em funções adicionais, mantendo o script focado na simplicidade do conceito trabalhado.
 
 2. **[Repetindo Textos ✏️](./2_repetindo_textos.py)**
    * **Descrição:** Solicita uma string e um número inteiro, retornando o texto repetido a quantidade de vezes informada.
