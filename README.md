@@ -1,23 +1,23 @@
-# 🤖 Resolvendo Algoritmos em Python com GitHub Copilot
+# 🤖 Resolvendo Algoritmos em Python com Gemini IA
 
 ![Python](https://img.shields.io/badge/Python-306998?style=for-the-badge&logo=python&logoColor=white)
-![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=github&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-> Projeto desenvolvido como parte do desafio prático da **DIO (Digital Innovation One)**, com o objetivo de explorar o uso do **GitHub Copilot** no auxílio à resolução, otimização e documentação de algoritmos em Python.
+> Projeto desenvolvido como parte do desafio prático da **DIO (Digital Innovation One)**, com o objetivo de explorar o uso da **Gemini IA** no auxílio à resolução, otimização e documentação de algoritmos em Python.
 
 ---
 
 ## 💻 Sobre o Projeto
 
-Este repositório reúne resoluções de desafios de código e algoritmos em Python desenvolvidos com suporte de Inteligência Artificial. O foco central não foi apenas obter a solução final, mas entender como o **GitHub Copilot** atua como um assistente no dia a dia do desenvolvimento — desde a sugestão de trechos de código até o refatoramento e criação de testes simples.
+Este repositório reúne resoluções de desafios de código e algoritmos em Python desenvolvidos com suporte de Inteligência Artificial. O foco central não foi apenas obter a solução final, mas entender como a **Gemini IA** atua como uma assistente no dia a dia do desenvolvimento — desde a sugestão de trechos de código até o refatoramento e criação de testes simples.
 
 ---
 
 ## 🛠️ Tecnologias e Ferramentas
 
 * **[Python 3.10+](https://www.python.org/)** — Linguagem de programação utilizada.
-* **[GitHub Copilot](https://github.com/features/copilot)** — Assistente de IA para geração de código, autocompletar e sugestões contextuais.
+* **[Gemini IA](https://gemini.google.com/)** — Modelo de Inteligência Artificial para geração de código, auxílio no raciocínio lógico e sugestões contextuais.
 * **[VS Code](https://code.visualstudio.com/)** — Ambiente de desenvolvimento integrado (IDE).
 * **[Git & GitHub](https://github.com/)** — Versionamento de código e hospedagem do repositório.
 
