@@ -50,9 +50,18 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
      * **Remoção do `if __name__`:** Mantido o foco didático e direto para scripts de execução individual.
 
 3. **[Operações Matemáticas Simples 📐](./3_operacoes_matematicas.py)**
-   * **Descrição:** Solicita dois números e realiza uma operação matemática básica entre eles.
-   * **Conceitos:** Operadores aritméticos (`+`, `-`, `*`, `/`), conversão para número e tratamento de entradas.
+   * **Objetivo:** Solicitar dois números e um operador aritmético ao usuário para realizar e exibir o cálculo.
+   * **Lógica e Conceitos Aplicados:**
+     * Uso de conversão de tipos para ponto flutuante (`float()`) com suporte à substituição de vírgula por ponto (`.replace(',', '.')`).
+     * Tratamento do erro de divisão por zero (`ZeroDivisionError`) e erros de conversão (`ValueError`).
+     * Formatação de saída com `round()` e verificação de números inteiros com `.is_integer()`.
 
+   * **Decisões de Arquitetura e Resiliência (Clean Code):**
+     * **Separação de Responsabilidades (SRP):**
+       * `obter_numero_valido()`: Valida e converte a entrada numérica.
+       * `obter_operador_valido()`: Restringe e valida a seleção dos operadores aceitos (`+`, `-`, `*`, `/`).
+       * `calcular()`: Função pura focada apenas nas quatro operações fundamentais.
+     * **Tratamento de Divisão por Zero:** A função de cálculo lança a exceção e o fluxo principal captura, impedindo o *crash* e permitindo ao usuário re-digitar apenas o segundo número.
 4. **[Verificando Números Pares e Ímpares 🧮](./4_par_ou_impar.py)**
    * **Descrição:** Recebe um número inteiro e identifica se ele é par ou ímpar utilizando estruturas condicionais.
    * **Conceitos:** Estruturas de controle (`if/else`), operador de módulo (`%`) e otimização de código com IA.
