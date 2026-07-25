@@ -62,10 +62,20 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
        * `obter_operador_valido()`: Restringe e valida a seleção dos operadores aceitos (`+`, `-`, `*`, `/`).
        * `calcular()`: Função pura focada apenas nas quatro operações fundamentais.
      * **Tratamento de Divisão por Zero:** A função de cálculo lança a exceção e o fluxo principal captura, impedindo o *crash* e permitindo ao usuário re-digitar apenas o segundo número.
+  
 4. **[Verificando Números Pares e Ímpares 🧮](./4_par_ou_impar.py)**
-   * **Descrição:** Recebe um número inteiro e identifica se ele é par ou ímpar utilizando estruturas condicionais.
-   * **Conceitos:** Estruturas de controle (`if/else`), operador de módulo (`%`) e otimização de código com IA.
+   * **Objetivo:** Receber um número inteiro do usuário e verificar se ele é par ou ímpar utilizando o operador de módulo (`%`).
+   * **Lógica e Conceitos Aplicados:**
+     * Uso da operação matemática de resto da divisão (`numero % 2 == 0`) para determinar paridade.
+     * Estrutura de operador ternário para atribuição condicional direta (`"par" if ... else "ímpar"`).
+     * Validação de entrada para garantir a conversão segura com `int()` e tratamento do erro de conversão (`ValueError`).
 
+   * **Decisões de Arquitetura e Resiliência (Clean Code):**
+     * **Análise de Matemática Computacional:** O operador `%` em Python lida de forma nativa com números inteiros negativos e o número `0`, mantendo o comportamento consistente sem a necessidade de condicionais extras.
+     * **Separação de Responsabilidades (SRP):**
+       * `obter_numero_inteiro()`: Responsável exclusivamente por coletar e garantir a entrada válida no terminal.
+       * `eh_par_ou_impar()`: Função pura focada unicamente no cálculo da regra de paridade.
+  
 5. **[Calculando Média de Notas 📚](./5_calculando_media.py)**
    * **Descrição:** Recebe três notas do usuário e calcula a média aritmética simples.
    * **Conceitos:** Operadores aritméticos, precedência de operadores e manipulação de variáveis do tipo `float`.
