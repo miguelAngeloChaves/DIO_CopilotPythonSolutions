@@ -27,14 +27,14 @@ Este repositório reúne resoluções de desafios de código e algoritmos em Pyt
 
 Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositório com o auxílio da **Gemini IA**:
 
-1. **[Concatenando Dados 🐾](./1_concatenando_dados.py)**
+1. **[Concatenando Dados 🐾](src/1_concatenando_dados.py)**
    * **Objetivo:** Receber duas entradas do usuário e exibi-las juntas em uma única string.
    * **Lógica e Conceitos Aplicados:**
      * Uso da função nativa `input()` para captura de dados (que no Python sempre chegam como o tipo `string`).
      * Utilização de **f-strings** (`f"{var1} {var2}"`) para fazer a interpolação de variáveis de forma mais legível e performática em comparação à concatenação com o operador `+`.
    * **Decisão Técnica:** Opção por um fluxo linear e direto, sem o encapsulamento em funções adicionais, mantendo o script focado na simplicidade do conceito trabalhado.
 
-2. **[Repetindo Textos ✏️](./2_repetindo_textos.py)**
+2. **[Repetindo Textos ✏️](src/2_repetindo_textos.py)**
    * **Objetivo:** Receber uma string e um número inteiro, retornando o texto repetido a quantidade de vezes informada.
    * **Lógica e Conceitos Aplicados:**
      * Uso do operador de multiplicação (`*`) em strings para repetição nativa.
@@ -49,7 +49,7 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
      * **Tratamento de Estouro de Memória (`MemoryError`):** Durante os testes de estresse, identificou-se que como o tipo `int` em Python possui precisão arbitrária (sem limite máximo fixo de tamanho), o input de números extremamente altos (ex: $500$ bilhões) não causava estouro de inteiro, mas alocava espaço excessivo de RAM ao tentar gerar a string, resultando em `MemoryError`. A execução principal foi envolvida em um bloco `try/except MemoryError` para capturar essa exceção do sistema e solicitar uma nova quantidade sem derrubar a aplicação.
      * **Remoção do `if __name__`:** Mantido o foco didático e direto para scripts de execução individual.
 
-3. **[Operações Matemáticas Simples 📐](./3_operacoes_matematicas.py)**
+3. **[Operações Matemáticas Simples 📐](src/3_operacoes_matematicas.py)**
    * **Objetivo:** Solicitar dois números e um operador aritmético ao usuário para realizar e exibir o cálculo.
    * **Lógica e Conceitos Aplicados:**
      * Uso de conversão de tipos para ponto flutuante (`float()`) com suporte à substituição de vírgula por ponto (`.replace(',', '.')`).
@@ -63,7 +63,7 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
        * `calcular()`: Função pura focada apenas nas quatro operações fundamentais.
      * **Tratamento de Divisão por Zero:** A função de cálculo lança a exceção e o fluxo principal captura, impedindo o *crash* e permitindo ao usuário re-digitar apenas o segundo número.
   
-4. **[Verificando Números Pares e Ímpares 🧮](./4_par_ou_impar.py)**
+4. **[Verificando Números Pares e Ímpares 🧮](src/4_par_ou_impar.py)**
    * **Objetivo:** Receber um número inteiro do usuário e verificar se ele é par ou ímpar utilizando o operador de módulo (`%`).
    * **Lógica e Conceitos Aplicados:**
      * Uso da operação matemática de resto da divisão (`numero % 2 == 0`) para determinar paridade.
@@ -76,7 +76,7 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
        * `obter_numero_inteiro()`: Responsável exclusivamente por coletar e garantir a entrada válida no terminal.
        * `eh_par_ou_impar()`: Função pura focada unicamente no cálculo da regra de paridade.
   
-5. **[Calculando Média de Notas 📚](./5_calculando_media.py)**
+5. **[Calculando Média de Notas 📚](src/5_calculando_media.py)**
    * **Objetivo:** Receber três notas de um aluno, calcular a média aritmética simples e exibir o resultado formatado.
    * **Lógica e Conceitos Aplicados:**
      * Coleta e conversão de entradas para o tipo `float` com tratamento de vírgulas (`.replace(',', '.')`).
@@ -89,7 +89,7 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
      * **Generalização do Cálculo:** A função `calcular_media(notas)` opera sobre uma lista genérica, tornando a regra de negócio extensível para qualquer quantidade de avaliações sem necessidade de alteração de código.
      * **Programação Defensiva:** Inclusão de verificação contra listas vazias (`if not notas`) para evitar o lançamento de erro de divisão por zero (`ZeroDivisionError`).
 
-6. **[Verificando Palíndromos 🔄](./6_verificando_palindromos.py)**
+6. **[Verificando Palíndromos 🔄](src/6_verificando_palindromos.py)**
    * **Objetivo:** Receber uma palavra ou frase e verificar se ela é um palíndromo, desconsiderando espaços, acentos, pontuações e símbolos de ruído.
    * **Lógica e Conceitos Aplicados:**
      * Uso de fatiamento (*slicing*) `[::-1]` para inversão nativa e eficiente de strings.
