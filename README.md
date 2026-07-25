@@ -110,4 +110,6 @@ Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositóri
 ### Passo a Passo
 
 1. **Clone este repositório:**
-   ```bash git clone https://github.com/miguelAngeloChaves/DIO_CopilotPythonSolutions.git
+   ```bash
+   git clone [https://github.com/miguelAngeloChaves/DIO_CopilotPythonSolutions.git](https://github.com/miguelAngeloChaves/DIO_CopilotPythonSolutions.git)
+   ```
