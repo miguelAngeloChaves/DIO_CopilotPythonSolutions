@@ -16,13 +16,11 @@ Este repositório reúne resoluções de desafios de código e algoritmos em Pyt
 
 ## 🛠️ Tecnologias e Ferramentas
 
-* **[Python 3.10+](https://www.python.org/)** — Linguagem de programação utilizada.
-* **[Gemini IA](https://gemini.google.com/)** — Modelo de Inteligência Artificial para geração de código, auxílio no raciocínio lógico e sugestões contextuais.
-* **[VS Code](https://code.visualstudio.com/)** — Ambiente de desenvolvimento integrado (IDE).
-* **[Git & GitHub](https://github.com/)** — Versionamento de código e hospedagem do repositório.
-
----
-
+* **<a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python 3.10+</a>** — Linguagem de programação utilizada.
+* **<a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Gemini IA</a>** — Modelo de Inteligência Artificial para geração de código, auxílio no raciocínio lógico e sugestões contextuais.
+* **<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code</a>** — Ambiente de desenvolvimento integrado (IDE).
+* **<a href="https://github.com/" target="_blank" rel="noopener noreferrer">Git & GitHub</a>** — Versionamento de código e hospedagem do repositório.
+  
 ## 🎯 Desafios Resolvidos
 
 Abaixo estão os 6 desafios de código desenvolvidos e explorados no repositório com o auxílio da **Gemini IA**:
